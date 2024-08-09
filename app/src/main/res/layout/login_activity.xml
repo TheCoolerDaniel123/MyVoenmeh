@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/loginPage"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17.060dp"
+            android:layout_marginTop="53.743dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/button_cross" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17.060dp"
+            android:layout_marginTop="92.133dp"
+            android:fontFamily="@font/montserrat_sb"
+            android:text="Авторизация"
+            android:textColor="@color/black"
+            android:textSize="27.300dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="213.270dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_m"
+                android:text="Введите Ваши логин и пароль от Moodle"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="19.620dp"
+                android:layout_height="19.620dp"
+                android:layout_marginStart="5dp"
+                app:srcCompat="@drawable/logo_moodle" />
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="256.017dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="312.763dp"
+                android:layout_height="50.647dp"
+                android:background="@drawable/corner_login"
+                android:fontFamily="@font/montserrat_m"
+                android:hint="Логин"
+                android:paddingStart="37.333dp"
+                android:singleLine="true"
+                android:textColor="#9A9A9A"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="312.763dp"
+                android:layout_height="50.647dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corner_login"
+                android:fontFamily="@font/montserrat_m"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:paddingStart="37.333dp"
+                android:textColor="#9A9A9A"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23.333dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:button="@drawable/cb_login"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:theme="@style/colored_checkBox" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.333dp"
+                    android:fontFamily="@font/montserrat_m"
+                    android:text="Даю согласие на обработку персональных данных"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:theme="@style/colored_checkBox" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="281.517dp"
+                android:layout_height="61.183dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25.333dp"
+                android:backgroundTint="#234090"
+                android:fontFamily="@font/montserrat_sb"
+                android:text="Войти"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="17.060dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tracker.TrackerFragment">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.943dp"
+            android:layout_marginTop="102.370dp">
+
+            <RadioButton
+                android:id="@+id/rad_btn5"
+                android:layout_width="40.983dp"
+                android:layout_height="42.667dp"
+                android:background="@null"
+                android:backgroundTintMode="add"
+                android:button="@null"
+                android:text="5"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/rad_btn4"
+                android:layout_width="40.983dp"
+                android:layout_height="42.667dp"
+                android:background="@drawable/button_rg4"
+                android:backgroundTintMode="add"
+                android:button="@null"
+                android:text="4"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/rad_btn3"
+                android:layout_width="40.983dp"
+                android:layout_height="44.473dp"
+                android:background="@drawable/button_rg3"
+                android:backgroundTintMode="add"
+                android:button="@null"
+                android:text="3"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/rad_btn2"
+                android:layout_width="40.983dp"
+                android:layout_height="44.473dp"
+                android:background="@drawable/button_rg2"
+                android:backgroundTintMode="add"
+                android:button="@null"
+                android:text="2"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/rad_btn1"
+                android:layout_width="40.983dp"
+                android:layout_height="42.667dp"
+                android:background="@drawable/button_rg1"
+                android:backgroundTintMode="add"
+                android:button="@null"
+                android:checked="true"
+                android:text="1"
+                android:textSize="0sp" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="303.080dp"
+            android:layout_marginTop="102.333dp"
+            android:background="@null"
+            android:button="@drawable/switch_map"
+            android:thumb="@null"
+            android:track="@null"
+            tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

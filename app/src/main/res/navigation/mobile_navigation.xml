@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.my.voenmeh.ui.news.NewsFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_tracker"
+        android:name="com.my.voenmeh.ui.tracker.TrackerFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_tracker" />
+
+    <fragment
+        android:id="@+id/navigation_schedule"
+        android:name="com.my.voenmeh.ui.schedule.ScheduleFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/navigation_mail"
+        android:name="com.my.voenmeh.ui.mail.MailFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_mail" />
+
+    <fragment
+        android:id="@+id/navigation_service"
+        android:name="com.my.voenmeh.ui.service.ServiceFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_service" />
+</navigation>
